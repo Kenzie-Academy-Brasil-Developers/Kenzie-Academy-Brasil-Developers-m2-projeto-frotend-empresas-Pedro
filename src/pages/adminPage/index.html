@@ -15,57 +15,55 @@
     <link rel="stylesheet" href="../../styles/toast.css">
     <link rel="stylesheet" href="../../styles/text.css">
     <link rel="stylesheet" href="../../styles/input.css">
+    <link rel="stylesheet" href="../../styles/departments.css">
+    <link rel="stylesheet" href="../../styles/users.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
     <link rel="stylesheet" href="./index.css">
     <script type="module" defer src="./index.js"></script>
-    <title>Kenzie Empresas - Registro</title>
+    <title>Kenzie Empresas - Admin page</title>
 </head>
+<body>
+    <div class="modal-wrapper relative flex align-center justify-center d-none"></div>
 
-<body class="body">
     <header class="header">
         <div class="container flex justify-between">
             <h1 class="title-logo flex">
                 <div></div>
-                <img src="../../assets/img/Kenzie Empresas.jpg" alt="Logo da Kenzie empresas">
+                <img class="img-header" src="../../assets/img/Kenzie Empresas.jpg" alt="Logo da Kenzie empresas">
             </h1>
-
-            <div class="menu-btn flex justify-center align-center">
-                <div class="menu-btn__burger"></div>
-            </div>
 
             <div class="sub-menu-wrap absolute">
                 <div class="sub-menu">
                     <div class="box-buttons-header flex justify-around">
-                        <button class="button-white">Home</button>
-                        <button class="button-blue">Login</button>
+                        <button id="logout" class="button-white">Logout</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
+
     <main class="main">
-        <div class="box-content container flex justify-center">
-            <div class="box-main-modal flex flex-column relative">
-                <h2 class="title-register">Cadastre-se</h2>
-                <form class="form-register flex flex-column" action="">
-                    <input id="name" class="input-register" type="text" name="name" placeholder="Seu nome" required="true">
-                    <input id="email" class="input-register" type="email" name="email" placeholder="Seu e-mail" required="true">
-                    <input id="password" class="input-register" type="password" name="password" placeholder="Sua senha" required="true">
-                    <select  class="input-register" title="nivelPro" name="nivelPro" id="nivelPro" required="false">
-                        <option value="">Nível profissional
+        <div class="container">
+            <section class="content-departments">
+                <div class="box-derpartments-header flex justify-between">
+                    <h2 class="title-departments">Departamentos</h2>
+                    <select title="companies" name="companies" id="selectCompanies">
+                        <option value="">Selecionar Empresa
                     </option>
-                    <option value="estágio">Estágio</option>
-                    <option value="júnior">Junior</option>
-                    <option value="pleno">Pleno</option>
-                    <option value="sênior">Sênior</option>
                     </select>
 
-                    <button id="cadastrar" class="button-blue" type="submit">Cadastre-se</button>
-                    <button id="home" class="button-white" type="submit">Retornar</button>
-                </form>
-            </div>
+                    <button class="button-creat"><i class="fa fa-plus"></i> Criar</button>
+                </div>
+                <ul class="departments-ulList flex flex-wrap justify-between">
+                </ul>
+            </section>
+    
+            <section class="content-users">
+                <h2 class="title-users">Usuários cadastrados</h2>
+                <ul class="users-ulList flex flex-wrap justify-between">
+                </ul>
+            </section>
         </div>
     </main>
 </body>
-
 </html>

@@ -2,7 +2,6 @@ import { listAllCompanies, creatDepartments, listAllDepartments, deleteDeparment
 import { creatListDepartments } from "../../scripts/creat.js"
 import { modalCreatDepartment, creatOptions } from "../../scripts/creatModal.js"
 
-
 function renderCompanies(arr){
     let result = []
     arr.forEach(element =>{
@@ -22,7 +21,7 @@ async function showModalCreatDepartment(http, tokenAdmin){
     const allCompanies = await listAllCompanies(
         `${http.getCompanies}`
     )
-// ---------------------------------------------
+    
     const divWrapp = document.querySelector(".modal-wrapper")
     const buttonCreat = document.querySelector(".button-creat")
     buttonCreat.addEventListener("click", (e)=>{

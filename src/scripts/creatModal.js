@@ -1,7 +1,6 @@
 import { deleteDeparment, deleteUsers, editDepartment, listAllDepartments, listAllUsers, editUsers, editInfoUser } from "./api.js"
 import { creatListDepartments, creatListUsers } from "./creat.js"
 
-
 function creatOptions(companies, id){
     let option = document.createElement("option")
     option.value = `${id}`
@@ -397,7 +396,6 @@ function creatModalInfoUser(){
     divWrapp.append(divContent)
 
 }
-
 
 export {
     modalCreatDepartment,

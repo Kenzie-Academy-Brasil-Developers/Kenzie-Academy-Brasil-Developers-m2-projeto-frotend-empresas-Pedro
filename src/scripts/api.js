@@ -9,7 +9,6 @@ async function listAllCompanies(urlApi){
     }
 }
 
-
 async function listAllSectors(urlApi){
     try{
         const data = await fetch(urlApi)
@@ -20,7 +19,6 @@ async function listAllSectors(urlApi){
         return error
     }
 }
-
 
 async function ListSpecificCompanies(urlApi){
     try{
@@ -61,7 +59,6 @@ async function creatUser(urlApi, name, password, email, levelPro){
         return objError
     }
 }
-
 
 async function userLogin(urlApi, email, password){
     try{
@@ -107,7 +104,6 @@ async function verificUser(urlApi, token) {
     }
 }
 
-
 async function listAllDepartments(urlApi, tokenAdmin){
     try{
         const dataJSON = await fetch(`${urlApi}`, {
@@ -126,7 +122,6 @@ async function listAllDepartments(urlApi, tokenAdmin){
         return error
     }
 }
-
 
 async function listCompaniesDepartment(urlApi, id, tokenAdmin){
 
@@ -147,7 +142,6 @@ async function listCompaniesDepartment(urlApi, id, tokenAdmin){
         return error
     }
 }
-
 
 async function creatDepartments(urlApi, name, description, id, tokenAdmin){
 
@@ -176,7 +170,6 @@ async function creatDepartments(urlApi, name, description, id, tokenAdmin){
     }
 }
 
-
 async function deleteDeparment(urlApi, id, tokenAdmin){
 
     try{
@@ -195,7 +188,6 @@ async function deleteDeparment(urlApi, id, tokenAdmin){
         return error
     }
 }
-
 
 async function editDepartment(urlApi, id, tokenAdmin, description){
 
@@ -223,7 +215,6 @@ async function editDepartment(urlApi, id, tokenAdmin, description){
     }
 }
 
-
 async function listAllUsers(urlApi, tokenAdmin){
     try{
         const dataJSON = await fetch(`${urlApi}`, {
@@ -243,7 +234,6 @@ async function listAllUsers(urlApi, tokenAdmin){
     }
 }
 
-
 async function deleteUsers(urlApi, id, tokenAdmin){
 
     try{
@@ -259,7 +249,6 @@ async function deleteUsers(urlApi, id, tokenAdmin){
         return error
     }
 }
-
 
 async function editUsers(urlApi, id, tokenAdmin, kindWork, proLevel){
 
@@ -287,7 +276,6 @@ async function editUsers(urlApi, id, tokenAdmin, kindWork, proLevel){
     }
 }
 
-
 async function listAllUsersOutOfWork(urlApi, tokenAdmin){
 
     try{
@@ -306,7 +294,6 @@ async function listAllUsersOutOfWork(urlApi, tokenAdmin){
 
     }
 }
-
 
 async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
 
@@ -335,7 +322,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
     }
 }
 
-
  async function dismissEmployees(urlApi, tokenAdmin, userId){
     
     try{
@@ -355,7 +341,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
     }
  }
 
-
  async function infoUser(urlApi, token){
     try{
         const dataJSON = await fetch(`${urlApi}`, {
@@ -373,7 +358,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
         return error
     }
  }
-
 
  async function allEmployees(urlApi, token) {
 
@@ -394,7 +378,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
     }
  }
 
-
  async function employeesDepartment(urlApi, token){
 
     try{
@@ -413,7 +396,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
         return error
     }
  }
-
 
  async function editInfoUser(urlApi, token, username, password, email) {
 
@@ -441,8 +423,6 @@ async function hideEmployees(urlApi, tokenAdmin, userId, departmentId){
         return error
     }
  }
-
-
 
 export {
     listAllCompanies,

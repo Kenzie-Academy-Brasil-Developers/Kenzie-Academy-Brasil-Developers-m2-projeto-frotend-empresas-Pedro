@@ -19,11 +19,9 @@ function inputClear(){
     inputPassowrd.value = ""
 }
 
-
-
 async function Main(http){
     getValueSelect()
-    // -----------------------------------------------
+
     const buttonRegister = document.querySelector("#cadastrar")
     buttonRegister.addEventListener("click", async (e)=>{
         e.preventDefault()
@@ -49,7 +47,7 @@ async function Main(http){
         }
 
     })
-// ----------------------------------------------------
+
 }
 
 export {

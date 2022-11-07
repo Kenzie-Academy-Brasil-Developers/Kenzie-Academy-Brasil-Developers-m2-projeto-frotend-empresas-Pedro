@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles/input.css">
     <link rel="stylesheet" href="./index.css">
     <script type="module" defer src="./index.js"></script>
-    <title>Kenzie Empresas - Login</title>
+    <title>Kenzie Empresas - Registro</title>
 </head>
 
 <body class="body">
@@ -36,27 +36,35 @@
                 <div class="sub-menu">
                     <div class="box-buttons-header flex justify-around">
                         <button class="button-white">Home</button>
-                        <button class="button-blue">Cadastro</button>
+                        <button class="button-blue">Login</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    
     <main class="main">
         <div class="box-content container flex justify-center">
             <div class="box-main-modal flex flex-column relative">
-                <h2 class="title-register">Login</h2>
+                <h2 class="title-register">Cadastre-se</h2>
                 <form class="form-register flex flex-column" action="">
+                    <input id="name" class="input-register" type="text" name="name" placeholder="Seu nome" required="true">
                     <input id="email" class="input-register" type="email" name="email" placeholder="Seu e-mail" required="true">
                     <input id="password" class="input-register" type="password" name="password" placeholder="Sua senha" required="true">
+                    <select  class="input-register" title="nivelPro" name="nivelPro" id="nivelPro" required="false">
+                        <option value="">Nível profissional
+                    </option>
+                    <option value="estágio">Estágio</option>
+                    <option value="júnior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="sênior">Sênior</option>
+                    </select>
 
-                    <button id="login" class="button-blue" type="submit">Login</button>
-                    <button id="cadastrar" class="button-white" type="submit">Cadastre-se</button>
+                    <button id="cadastrar" class="button-blue" type="submit">Cadastre-se</button>
+                    <button id="home" class="button-white" type="submit">Retornar</button>
                 </form>
             </div>
         </div>
     </main>
 </body>
-
 </html>

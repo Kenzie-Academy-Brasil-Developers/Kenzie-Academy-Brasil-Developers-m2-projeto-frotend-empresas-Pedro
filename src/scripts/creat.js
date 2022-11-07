@@ -98,9 +98,6 @@ async function ulListCreatLi(http, tokenAdmin, company, id, department, descript
     })
 }
 
-// ------------------------------------------------------------------
-// ------------------------------------------------------------------
-
 function creatListDepartments(department, description, company, id, tokenAdmin, http){
     const divWrapp = document.querySelector(".modal-wrapper")
     const ulList = document.querySelector(".departments-ulList")
@@ -117,9 +114,6 @@ function creatListDepartments(department, description, company, id, tokenAdmin, 
 
     let divDepartmentsIcons = document.createElement("div")
     divDepartmentsIcons.classList.add("box-departments-icons", "flex", "justify-center", "align-center")
-    
-// ----------------------------------------------------------------------
-// ----------------------------------------------------------------------
 
     let spanEyes = document.createElement("span")
     spanEyes.innerHTML = `<i class="fa fa-eye icon-departments"></i>`
@@ -160,14 +154,8 @@ function creatListDepartments(department, description, company, id, tokenAdmin, 
             })
             ulListCreatLi(http, tokenAdmin, company, id, department, description)
         })
-// ----------------------------------------------------------------------
-
-
 
     })
-
-// ----------------------------------------------------------------------
-// ----------------------------------------------------------------------
 
     let spanPen = document.createElement("span")
     spanPen.innerHTML = `<i class="fa fa-pen"></i>`
@@ -307,7 +295,6 @@ function creatEmployeesDepartment(name, proNivel){
     `)
 
 }
-
 
 export{
     creatListCompanies,

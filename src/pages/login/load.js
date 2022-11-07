@@ -1,6 +1,5 @@
 import { userLogin, verificUser } from "../../scripts/api.js";
 
-
 async function Main(http){
    
     const inputEmail = document.querySelector("#email")
@@ -14,7 +13,7 @@ async function Main(http){
         )
 
         JSON.stringify(localStorage.setItem("token", userToken.token))
-// --------------------------------------------------------
+
         const userType = await verificUser(
             http.typeofUser, userToken
         )
@@ -30,7 +29,6 @@ async function Main(http){
         }
        
     })
-// ---------------------------------------------------------
 
 }
 

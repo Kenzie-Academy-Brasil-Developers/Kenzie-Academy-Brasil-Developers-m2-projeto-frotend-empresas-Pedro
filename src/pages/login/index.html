@@ -15,44 +15,47 @@
     <link rel="stylesheet" href="../../styles/toast.css">
     <link rel="stylesheet" href="../../styles/text.css">
     <link rel="stylesheet" href="../../styles/input.css">
-    <link rel="stylesheet" href="../../styles/departments.css">
-    <link rel="stylesheet" href="../../styles/users.css">
-    <link rel="stylesheet" href="../../styles/modal.css">
     <link rel="stylesheet" href="./index.css">
     <script type="module" defer src="./index.js"></script>
-    <title>Kenzie Empresas - User Page</title>
+    <title>Kenzie Empresas - Login</title>
 </head>
 
-<body>
-    <div class="modal-wrapper relative flex align-center justify-center d-none"></div>
-
+<body class="body">
     <header class="header">
         <div class="container flex justify-between">
             <h1 class="title-logo flex">
                 <div></div>
-                <img class="img-header" src="../../assets/img/Kenzie Empresas.jpg" alt="Logo da Kenzie empresas">
+                <img src="../../assets/img/Kenzie Empresas.jpg" alt="Logo da Kenzie empresas">
             </h1>
+
+            <div class="menu-btn flex justify-center align-center">
+                <div class="menu-btn__burger"></div>
+            </div>
 
             <div class="sub-menu-wrap absolute">
                 <div class="sub-menu">
                     <div class="box-buttons-header flex justify-around">
-                        <button id="logout" class="button-white">Logout</button>
+                        <button class="button-white">Home</button>
+                        <button class="button-blue">Cadastro</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="main-page-users container">
-        <div class="box-user-header flex justify-between align-center">
-        </div>
+    <main class="main">
+        <div class="box-content container flex justify-center">
+            <div class="box-main-modal flex flex-column relative">
+                <h2 class="title-register">Login</h2>
+                <form class="form-register flex flex-column" action="">
+                    <input id="email" class="input-register" type="email" name="email" placeholder="Seu e-mail" required="true">
+                    <input id="password" class="input-register" type="password" name="password" placeholder="Sua senha" required="true">
 
-        <div class="box-content-company flex flex-column align-center">
-            <ul class="ulList-users flex justify-center">
-            </ul>
+                    <button id="login" class="button-blue" type="submit">Login</button>
+                    <button id="cadastrar" class="button-white" type="submit">Cadastre-se</button>
+                </form>
+            </div>
         </div>
     </main>
-
 </body>
-
 </html>
