@@ -1,0 +1,114 @@
+.modal-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: 2000;
+}
+
+.box-creat-departments{
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    background-color: var(--color-white);
+    gap: 20px;
+}
+
+.form-modal{
+    gap: 18px;
+}
+
+.box-delete-departments{
+    width: 450px;
+    height: 200px;
+    padding: 45px;
+    background-color: var(--color-white);
+    gap: 30px;
+    text-align: center;
+}
+
+.box-edit-departments{
+    width: 450px;
+    height: 290px;
+    padding: 25px;
+    background-color: var(--color-white);
+    gap: 30px;
+}
+
+.textearea-modal{
+    width: 350px;
+    height: 113px;
+    padding: 15px;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-7);
+    resize: none;
+}
+
+.box-delete-users{
+    width: 450px;
+    height: 200px;
+    padding: 25px;
+    background-color: var(--color-white);
+    gap: 30px;
+    text-align: center;
+}
+
+.box-edit-users{
+    width: 450px;
+    height: 290px;
+    padding: 25px;
+    background-color: var(--color-white);
+    gap: 30px;
+}
+
+.box-options-department{
+    width: 550px;
+    height: 400px;
+    padding: 35px;
+    background-color: var(--color-white);
+    gap: 30px;
+}
+
+.box-description-options{
+    gap: 10px;
+}
+
+.box-select-options{
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.ulList-options{
+    height: 170px;
+    padding: 25px;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.082);
+    list-style: none;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+.ulList-options::-webkit-scrollbar{
+    height: 8px;
+}
+
+.ulList-options::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+}
+
+.liList-options{
+    min-width:200px;
+    height: 110px;
+    padding: 15px;
+    background-color: var(--color-white);
+    gap: 5px;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.box-creat-info{
+    width: 400px;
+    height: 330px;
+    padding: 45px;
+    background-color: var(--color-white);
+    gap: 30px;
+}

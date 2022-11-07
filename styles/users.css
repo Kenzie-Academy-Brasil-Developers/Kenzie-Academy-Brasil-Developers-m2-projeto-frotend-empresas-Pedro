@@ -1,0 +1,45 @@
+.content-users{
+    margin-top: 69px;
+    margin-bottom: 20px;
+}
+
+.users-ulList{
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.082);
+    height: 350px;
+    padding-top: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    gap: 28px;
+    overflow-y: auto;
+}
+
+.users-ulList::-webkit-scrollbar{
+    width: 8px;
+}
+
+.users-ulList::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+}
+
+.users-lilist{
+    background-color: var(--color-white);
+    width: 350px;
+    height: 155px;
+    padding-left: 15px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--color-blue);
+    gap: 35px;
+}
+
+.box-users-description{
+    gap: 10px;
+}
+
+.box-users-icons{
+    gap: 20px;
+}
+
+.icon-users{
+    color: var(--color-blue) !important;
+}

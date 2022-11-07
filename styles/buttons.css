@@ -1,0 +1,111 @@
+.button-white{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+    padding: 15px 40px 15px 40px;
+    font-weight: var(--font-weight-1);
+    cursor: pointer;
+}
+
+.button-blue{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-white);
+    padding: 15px 40px 15px 40px;
+    cursor: pointer;
+}
+
+.option-select{
+    font-size: var(--font-size-7);
+    cursor: pointer;
+}
+
+.value-select{
+    font-size: var(--font-size-7);
+    cursor: pointer;
+}
+
+.button-creat{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    padding-right: 20px;
+    color: var(--color-white);
+    width: 100px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.button-close{
+    right: 18px;
+    top: 20px;
+    background-color: transparent;
+    border: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.button-creat-department{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-white);
+    height: 50px;
+    cursor: pointer;
+}
+
+.button-delete-department{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: 1px solid var(--color-green);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-delete-users{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: 1px solid var(--color-green);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-edit-users{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-white);
+    height: 50px;
+    cursor: pointer;
+}
+
+.button-options{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: 1px solid var(--color-green);
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.button-off-users{
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+    font-weight: var(--font-weight-2);
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.button-edit-perfil{
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-white);
+    height: 50px;
+    cursor: pointer;
+}

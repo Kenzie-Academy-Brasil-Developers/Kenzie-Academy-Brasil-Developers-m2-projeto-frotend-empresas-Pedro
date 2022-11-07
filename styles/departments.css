@@ -1,0 +1,49 @@
+.departments-ulList{
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.082);
+    height: 350px;
+    padding-top: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 10px;
+    gap: 28px;
+    overflow-y: auto;
+}
+
+.departments-ulList::-webkit-scrollbar{
+    width: 8px;
+}
+
+.departments-ulList::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+}
+
+.departments-lilist{
+    background-color: var(--color-white);
+    width: 350px;
+    height: 155px;
+    padding-left: 15px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--color-blue);
+    gap: 35px;
+}
+
+.box-departments-description{
+    gap: 10px;
+}
+
+.box-departments-icons{
+    gap: 20px;
+}
+
+.icon-departments{
+    font-size: 30px;
+}
+
+.fa-pen{
+    font-size: 20px;
+}
+
+.fa-eye{
+    color: var(--color-blue) !important;
+}
